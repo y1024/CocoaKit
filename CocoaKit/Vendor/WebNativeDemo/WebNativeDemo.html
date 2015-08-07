@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>hello World</title>
+</head>
+<script type="text/javascript">
+
+//向app发送数据
+function sendCommand(cmd,param){
+    var url="testapp:"+cmd+":"+param;
+    document.location = url;
+}
+</script>
+<style type="text/css">
+tr
+{
+    text-align: center;
+    background-color:white;
+}
+*{
+    padding:0px;
+    margin:0px;
+}
+</style>
+<body style="background-color: transparent">
+    <div id = "testDiv" style = "margin-top:200px">
+        即将展示的内容是从APP传递过来的
+    </div>
+    <input type="button" value="JS正在向APP发送数据" onclick = "sendCommand('alert','JS向APP发送数据');"/>
+</body>
+</html>
+<script type="text/javascript">
+function getMessageFromApp(message){
+    var testDiv = document.getElementById("testDiv");
+    testDiv.innerText = message;
+}
+</script>
