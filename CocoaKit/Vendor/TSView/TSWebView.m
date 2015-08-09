@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 iOS. All rights reserved.
 //
 
-#import "MYWebView.h"
+#import "TSWebView.h"
 
-@implementation MYWebView
+@implementation TSWebView
 
 - (id)initWithFrame:(CGRect) frame URLString:(NSString *)urlString;
 {

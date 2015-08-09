@@ -6,12 +6,12 @@
 //  Copyright (c) 2015年 iOS. All rights reserved.
 //
 
-#import "MYCollectionView.h"
+#import "TSCollectionView.h"
 #import "MJRefresh.h"
 
 #import "CocoaKit.h"
 
-@implementation MYCollectionView
+@implementation TSCollectionView
 
 - (id)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout
 {
@@ -26,16 +26,22 @@
     
 }
 
-- (void)addMJHeaderWithTarget:(id)target action:(SEL)action
+- (void)ts_addMJHeaderWithTarget:(id)target action:(SEL)action
 {
-    [self addLegendHeaderWithRefreshingTarget:target refreshingAction:action];
     
-    [self.header beginRefreshing];
+    self.header = [MJRefreshNormalHeader headerWithRefreshingTarget:target refreshingAction:action];
+    
+    [self ts_beginMJRefresh];
 }
 
-- (void)addMJGifHeaderWithTarget:(id)target action:(SEL)aciton
+- (void)ts_addMJGifHeaderWithTarget:(id)target action:(SEL)aciton
 {
-    [self addGifHeaderWithRefreshingTarget:target refreshingAction:aciton];
+    self.header = [MJRefreshGifHeader headerWithRefreshingTarget:target refreshingAction:aciton];
+}
+
+- (void)ts_beginMJRefresh
+{
+    [self.header beginRefreshing];
 }
 
 - (void)endMJRefresh
@@ -45,12 +51,12 @@
 
 - (void)addMJFooterWithTarget:(id)target action:(SEL)_action
 {
-    [self addLegendFooterWithRefreshingTarget:target refreshingAction:_action];
+    self.footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:target refreshingAction:_action];
 }
 
 - (void)addMJGifFooterWithTarget:(id)target action:(SEL)action
 {
-    [self addGifFooterWithRefreshingTarget:target refreshingAction:action];
+    self.footer = [MJRefreshAutoGifFooter footerWithRefreshingTarget:self refreshingAction:action];
 }
 
 - (void)endMJLoadMore

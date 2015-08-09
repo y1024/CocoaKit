@@ -6,11 +6,11 @@
 //  Copyright (c) 2015年 iOSDev. All rights reserved.
 //
 
-#import "JSObject.h"
+#import "TSObject.h"
 
 @class JSAccountInfo;
 
-@interface JSAccountManager : JSObject
+@interface JSAccountManager : TSObject
 
 @property(nonatomic,strong)JSAccountInfo      *currentAccountInfo;
 @property(nonatomic,strong)NSMutableArray     *accountMutableArray;

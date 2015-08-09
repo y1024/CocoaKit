@@ -10,7 +10,9 @@
 #import "JSAccountInfo.h"
 
 #import "MJExtension.h"
-#import "JSKeyValueStore.h"
+#import "TSKeyValueStore.h"
+#import "CocoaKit.h"
+#import "YTKKeyValueStore.h"
 
 
 
@@ -66,7 +68,7 @@
     self = [super init];
     if (self) {
         self.accountMutableArray = [NSMutableArray array];
-        NSArray *allAccountJSONString = [[JSKeyValueStore shareKeyValueStore]getAllItemsFromTable:JS_AccountDBName];
+        NSArray *allAccountJSONString = [[TSKeyValueStore shareKeyValueStore]getAllItemsFromTable:JS_AccountDBName];
         [allAccountJSONString enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             YTKKeyValueItem *item = obj;
             

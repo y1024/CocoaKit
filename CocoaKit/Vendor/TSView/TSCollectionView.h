@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MYCollectionView : UICollectionView
+@interface TSCollectionView : UICollectionView
 
 - (id)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout;
 
@@ -18,7 +18,7 @@
  *  @param target
  *  @param action
  */
-- (void)addMJHeaderWithTarget:(id)target action:(SEL)action;
+- (void)ts_addMJHeaderWithTarget:(id)target action:(SEL)action;
 
 /**
  *  需要修改内部代码
@@ -27,7 +27,12 @@
  *  @param target target
  *  @param aciton action
  */
-- (void)addMJGifHeaderWithTarget:(id)target action:(SEL)aciton;
+- (void)ts_addMJGifHeaderWithTarget:(id)target action:(SEL)aciton;
+
+/**
+ *  开始MJ下拉刷新
+ */
+- (void)ts_beginMJRefresh;
 
 /**
  *  结束MJ刷新

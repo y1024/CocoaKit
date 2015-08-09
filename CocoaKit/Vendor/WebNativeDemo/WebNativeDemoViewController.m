@@ -8,12 +8,12 @@
 
 #import "WebNativeDemoViewController.h"
 
-#import "MYWebView.h"
+#import "TSWebView.h"
 
 @interface WebNativeDemoViewController ()<UIWebViewDelegate,UIScrollViewDelegate>
 
 {
-    MYWebView      *_webView;
+    TSWebView      *_webView;
     UITextField     *_tf;
 }
 
@@ -30,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Web_NativeViewController";
-    _webView = [[MYWebView alloc]initWithFrame:CGRectMake(0,0, ScreenWidth(), ScreenHeight() - 20 - 44 - 44 - 100) URLString:[[NSBundle mainBundle] pathForResource:@"WebNativeDemo" ofType:@"html"]];
+    _webView = [[TSWebView alloc]initWithFrame:CGRectMake(0,0, ScreenWidth(), ScreenHeight() - 20 - 44 - 44 - 100) URLString:[[NSBundle mainBundle] pathForResource:@"WebNativeDemo" ofType:@"html"]];
     [self.view addSubview:_webView];
     _webView.backgroundColor = RGB(225, 225, 225);
     _webView.delegate = self;

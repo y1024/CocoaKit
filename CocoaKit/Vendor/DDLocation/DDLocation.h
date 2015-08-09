@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 iOS. All rights reserved.
 //
 
-#import "MYObject.h"
+#import "TSObject.h"
 
-@interface DDLocation : MYObject
+@interface DDLocation : TSObject
 
 
 

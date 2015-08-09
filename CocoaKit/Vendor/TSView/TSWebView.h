@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MYWebView : UIWebView
+@interface TSWebView : UIWebView
 
 - (id)initWithFrame:(CGRect) frame URLString:(NSString *)urlString;
+
+
 
 
 @end

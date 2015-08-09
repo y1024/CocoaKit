@@ -6,12 +6,12 @@
 //  Copyright (c) 2015年 iOS. All rights reserved.
 //
 
-#import "Singleton.h"
+
 
 @class YTKKeyValueItem ;
 @class YTKKeyValueStore;
 
-@interface MYKeyValueStore : NSObject
+@interface TSKeyValueStore : NSObject
 
 {
     YTKKeyValueStore *_ytkKeyValueStore;
@@ -20,8 +20,6 @@
 + (instancetype)shareKeyValueStore;
 
 - (void)createTableWithName:(NSString *)tableName;
-
-- (BOOL)isTableExists:(NSString *)tableName;
 
 - (void)clearTable:(NSString *)tableName;
 

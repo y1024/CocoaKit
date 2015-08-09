@@ -6,11 +6,11 @@
 //  Copyright (c) 2015年 iOS. All rights reserved.
 //
 
-#import "JSObject.h"
+#import "TSObject.h"
 
 #import <objc/runtime.h>
 
-@implementation JSObject
+@implementation TSObject
 
 #pragma mark- initWithCoder
 - (id)initWithCoder:(NSCoder *)aDecoder {

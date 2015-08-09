@@ -9,13 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "SRRefreshView.h"
 
-@interface MYTableView : UITableView
+@interface TSTableView : UITableView
 
 {
     SRRefreshView   *_slimeView;
     
     
 }
+
++ (instancetype)loadFromNibWithNibName:(NSString*)nibName;
 
 - (id)initWithFrame:(CGRect)frame style:(UITableViewStyle)style;
 
@@ -25,7 +27,7 @@
  *  @param target
  *  @param action
  */
-- (SRRefreshView*)addSRRefreshWithTarget:(id)target;
+- (SRRefreshView*)ts_addSRRefreshWithTarget:(id)target;
 
 /**
  * 暂未实现
@@ -35,7 +37,7 @@
  *  @return
  */
 
-- (void)endSRRefresh;
+- (void)ts_endSRRefresh;
 
 /**
  *  添加传统的 MJ下拉刷新
@@ -43,7 +45,7 @@
  *  @param target
  *  @param action
  */
-- (void)addMJHeaderWithTarget:(id)target action:(SEL)action;
+- (void)ts_addMJHeaderWithTarget:(id)target action:(SEL)action;
 
 /**
  *  需要修改内部代码
@@ -52,12 +54,17 @@
  *  @param target target
  *  @param aciton action
  */
-- (void)addMJGifHeaderWithTarget:(id)target action:(SEL)aciton;
+- (void)ts_addMJGifHeaderWithTarget:(id)target action:(SEL)aciton;
+
+/**
+ *  开始MJ下拉刷新
+ */
+- (void)ts_beginMJRefresh;
 
 /**
  *  结束MJ刷新
  */
-- (void)endMJRefresh;
+- (void)ts_endMJRefresh;
 
 /**
  *  添加 传统的 MJ上提加载
@@ -65,27 +72,27 @@
  *  @param target
  *  @param action
  */
-- (void)addMJFooterWithTarget:(id)target action:(SEL)action;
+- (void)ts_addMJFooterWithTarget:(id)target action:(SEL)action;
 
 /**
  *  添加 GIF footer 上提加载 需要修改内部代码
  */
-- (void)addMJGifFooterWithTarget:(id)target action:(SEL)action;
+- (void)ts_addMJGifFooterWithTarget:(id)target action:(SEL)action;
 
 
 /**
  *  结束 上提加载
  */
-- (void)endMJLoadMore;
+- (void)ts_endMJLoadMore;
 
 /**
  *  结束 上提加载 无最多数据状态
  */
-- (void)endMJLoadNoMore;
+- (void)ts_endMJLoadNoMore;
 
 /**
  *  重置 上提加载状态
  */
-- (void)resetMJFooter;
+- (void)ts_resetMJFooter;
 
 @end

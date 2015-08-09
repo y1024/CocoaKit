@@ -10,7 +10,7 @@
 
 
 
-@interface JSObject : NSObject<NSCoding>
+@interface TSObject : NSObject<NSCoding>
 
 - (BOOL)saveToFile:(NSString *)path;
 + (id)loadFromFile:(NSString *)path;

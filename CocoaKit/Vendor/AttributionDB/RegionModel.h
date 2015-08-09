@@ -15,9 +15,9 @@
  *  @return 
  */
 
-#import "JSObject.h"
+#import "TSObject.h"
 
-@interface RegionModel : JSObject
+@interface RegionModel : TSObject
 
 /**
  *  号码前缀

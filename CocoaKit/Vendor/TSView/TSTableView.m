@@ -6,12 +6,17 @@
 //  Copyright (c) 2015年 iOS. All rights reserved.
 //
 
-#import "MYTableView.h"
+#import "TSTableView.h"
 #import "CocoaKit.h"
 
 #import "MJRefresh.h"
 
-@implementation MYTableView
+@implementation TSTableView
+
++ (instancetype)loadFromNibWithNibName:(NSString*)nibName
+{
+    return [[[NSBundle mainBundle]loadNibNamed:nibName owner:nil options:nil]firstObject];
+}
 
 - (id)initWithFrame:(CGRect)frame style:(UITableViewStyle)style
 {
@@ -27,7 +32,7 @@
     
 }
 
-- (SRRefreshView*)addSRRefreshWithTarget:(id<SRRefreshDelegate>)target
+- (SRRefreshView*)ts_addSRRefreshWithTarget:(id<SRRefreshDelegate>)target
 {
     _slimeView = [[SRRefreshView alloc] init];
     _slimeView.delegate = target;
@@ -45,49 +50,55 @@
     return _slimeView;
 }
 
-- (void)endSRRefresh
+- (void)ts_endSRRefresh
 {
     
 }
 
-- (void)addMJHeaderWithTarget:(id)target action:(SEL)action
+- (void)ts_addMJHeaderWithTarget:(id)target action:(SEL)action
 {
-    [self addLegendHeaderWithRefreshingTarget:target refreshingAction:action];
+    self.header = [MJRefreshNormalHeader headerWithRefreshingTarget:target refreshingAction:action];
     
+    [self ts_beginMJRefresh];
+}
+
+- (void)ts_addMJGifHeaderWithTarget:(id)target action:(SEL)aciton
+{
+    self.header = [MJRefreshGifHeader headerWithRefreshingTarget:target refreshingAction:aciton];
+}
+
+
+- (void)ts_beginMJRefresh
+{
     [self.header beginRefreshing];
 }
 
-- (void)addMJGifHeaderWithTarget:(id)target action:(SEL)aciton
-{
-    [self addGifHeaderWithRefreshingTarget:target refreshingAction:aciton];
-}
-
-- (void)endMJRefresh
+- (void)ts_endMJRefresh
 {
     [self.header endRefreshing];
 }
 
-- (void)addMJFooterWithTarget:(id)target action:(SEL)_action
+- (void)ts_addMJFooterWithTarget:(id)target action:(SEL)_action
 {
-    [self addLegendFooterWithRefreshingTarget:target refreshingAction:_action];
+        self.footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:target refreshingAction:_action];
 }
 
-- (void)addMJGifFooterWithTarget:(id)target action:(SEL)action
+- (void)ts_addMJGifFooterWithTarget:(id)target action:(SEL)action
 {
-    [self addGifFooterWithRefreshingTarget:target refreshingAction:action];
+        self.footer = [MJRefreshAutoGifFooter footerWithRefreshingTarget:self refreshingAction:action];
 }
 
-- (void)endMJLoadMore
+- (void)ts_endMJLoadMore
 {
     [self.footer endRefreshing];
 }
 
-- (void)endMJLoadNoMore
+- (void)ts_endMJLoadNoMore
 {
     [self.footer noticeNoMoreData];
 }
 
-- (void)resetMJFooter
+- (void)ts_resetMJFooter
 {
     [self.footer resetNoMoreData];
 }

@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "JSObject.h"
+#import "TSObject.h"
 
-@interface Singleton :JSObject
+@interface Singleton :TSObject
 
 + (instancetype)shareSingleton;
 

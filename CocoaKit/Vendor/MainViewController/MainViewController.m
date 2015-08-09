@@ -14,9 +14,9 @@
 
 #import "AddressBookViewController.h"
 
-#import "MYObject.h"
+#import "TSObject.h"
 
-#import "MYTableView.h"
+#import "TSTableView.h"
 
 #import "BlurViewController.h"
 
@@ -31,7 +31,7 @@
 
 {
     NSArray         *_dataSourceArray;
-    MYTableView    *_tableView ;
+    TSTableView    *_tableView ;
     SRRefreshView   *_slimeView;
 }
 
@@ -83,16 +83,16 @@
     [self setTitle:@"MainViewController"];
     
     
-    _tableView = [[MYTableView alloc]initWithFrame:CGRectMake(0,0, ScreenWidth(), ScreenHeight() - [self tabBarHeight]) style:UITableViewStylePlain];
+    _tableView = [[TSTableView alloc]initWithFrame:CGRectMake(0,0, ScreenWidth(), ScreenHeight() - [self tabBarHeight]) style:UITableViewStylePlain];
 
     
     [self.view addSubview:_tableView];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
-    _slimeView =   [_tableView addSRRefreshWithTarget:self];
+    _slimeView =   [_tableView ts_addSRRefreshWithTarget:self];
 
-    [_tableView addMJFooterWithTarget:self action:@selector(mjLoadMore)];
+    [_tableView ts_addMJFooterWithTarget:self action:@selector(mjLoadMore)];
     
     _dataSourceArray = @[@"QRViewController",@"JavaScriptCoreViewController",@"AddressBookViewController",@"MYObject",@"BlurViewController",@"WebNativeDemoViewController"];
 }
@@ -123,7 +123,7 @@
 {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        [_tableView endMJRefresh];
+        [_tableView ts_endMJRefresh];
         
     });
 }
@@ -131,7 +131,7 @@
 {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        [_tableView endMJLoadNoMore];
+        [_tableView ts_endMJLoadNoMore];
     });
 }
 

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 iOS. All rights reserved.
 //
 
-#import "MYKeyValueStore.h"
+#import "TSKeyValueStore.h"
 
 #import "YTKKeyValueStore.h"
 #import "MJExtension.h"
@@ -14,11 +14,11 @@
 
 #import "CocoaKit.h"
 
-static MYKeyValueStore    *_keyValueStore = nil ;
+static TSKeyValueStore      *_keyValueStore = nil ;
 
-static YTKKeyValueStore *_ytkKeyValueStore = nil ;
+static YTKKeyValueStore     *_ytkKeyValueStore = nil ;
 
-@implementation MYKeyValueStore
+@implementation TSKeyValueStore
 
 - (void)dealloc
 {
@@ -89,10 +89,7 @@ static YTKKeyValueStore *_ytkKeyValueStore = nil ;
     [_ytkKeyValueStore createTableWithName:tableName];
 }
 
-- (BOOL)isTableExists:(NSString *)tableName
-{
-    return [_ytkKeyValueStore isTableExists:tableName];
-}
+
 
 - (void)clearTable:(NSString *)tableName
 {

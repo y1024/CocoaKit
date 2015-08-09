@@ -7,6 +7,7 @@
 //
 
 #import "NSString+StringKit.h"
+#import "CocoaKit.h"
 
 @implementation NSString (StringKit)
 

@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 iOSDev. All rights reserved.
 //
 
-#import "JSObject.h"
+#import "TSObject.h"
 
-@interface JSConst : JSObject
+@interface JSConst : TSObject
 
 
 extern NSString *const JS_AccountDBName;

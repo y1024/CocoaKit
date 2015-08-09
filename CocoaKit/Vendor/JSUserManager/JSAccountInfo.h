@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 iOSDev. All rights reserved.
 //
 
-#import "JSObject.h"
+#import "TSObject.h"
 
-@interface JSAccountInfo : JSObject
+@interface JSAccountInfo : TSObject
 
 @property(nonatomic,assign)NSInteger        role; ///角色
 
