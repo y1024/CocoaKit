@@ -16,7 +16,7 @@
 
 #import "TSObject.h"
 
-#import "TSTableView.h"
+#import "TSViewHeaders.h"
 
 #import "BlurViewController.h"
 
@@ -25,6 +25,8 @@
 #import "WebNativeDemoViewController.h"
 
 #import "MYHUD.h"
+#import "TSImport.h"
+
 
 
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>
