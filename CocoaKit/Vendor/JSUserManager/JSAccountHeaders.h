@@ -6,6 +6,6 @@
 //  Copyright (c) 2015年 iOSDev. All rights reserved.
 //
 
-#import "JSAccountManager.h"
-#import "JSAccountInfo.h"
-#import "JSConst.h"
+#import "TSAccountManager.h"
+#import "TSAccountInfo.h"
+#import "TSConst.h"

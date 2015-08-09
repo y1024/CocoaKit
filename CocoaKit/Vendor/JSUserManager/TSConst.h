@@ -8,7 +8,7 @@
 
 #import "TSObject.h"
 
-@interface JSConst : TSObject
+@interface TSConst : TSObject
 
 
 extern NSString *const JS_AccountDBName;

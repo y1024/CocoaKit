@@ -10,9 +10,9 @@
 		33016DE01B3FFF6700DB50AA /* NSDate+DateKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 33016DD91B3FFF6700DB50AA /* NSDate+DateKit.m */; };
 		33016DE11B3FFF6700DB50AA /* UIColor+ColorKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 33016DDB1B3FFF6700DB50AA /* UIColor+ColorKit.m */; };
 		33016DE21B3FFF6700DB50AA /* UIImageView+ImageViewKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 33016DDE1B3FFF6700DB50AA /* UIImageView+ImageViewKit.m */; };
-		33016DEB1B40002500DB50AA /* JSAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 33016DE61B40002500DB50AA /* JSAccountInfo.m */; };
-		33016DEC1B40002500DB50AA /* JSAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33016DE81B40002500DB50AA /* JSAccountManager.m */; };
-		33016DED1B40002500DB50AA /* JSConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 33016DEA1B40002500DB50AA /* JSConst.m */; };
+		33016DEB1B40002500DB50AA /* TSAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 33016DE61B40002500DB50AA /* TSAccountInfo.m */; };
+		33016DEC1B40002500DB50AA /* TSAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33016DE81B40002500DB50AA /* TSAccountManager.m */; };
+		33016DED1B40002500DB50AA /* TSConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 33016DEA1B40002500DB50AA /* TSConst.m */; };
 		33016DF11B4000B900DB50AA /* TSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 33016DF01B4000B900DB50AA /* TSObject.m */; };
 		33409BEE1B317CBC0066510C /* NSString+StringKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 33409BED1B317CBC0066510C /* NSString+StringKit.m */; };
 		335DED561B2996C00008A308 /* MYHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 335DED551B2996C00008A308 /* MYHUD.m */; };
@@ -122,12 +122,12 @@
 		33016DDE1B3FFF6700DB50AA /* UIImageView+ImageViewKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ImageViewKit.m"; sourceTree = "<group>"; };
 		33016DDF1B3FFF6700DB50AA /* UIImageView+ImageViewKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ImageViewKit.h"; sourceTree = "<group>"; };
 		33016DE41B40002500DB50AA /* JSAccountHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAccountHeaders.h; sourceTree = "<group>"; };
-		33016DE51B40002500DB50AA /* JSAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAccountInfo.h; sourceTree = "<group>"; };
-		33016DE61B40002500DB50AA /* JSAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAccountInfo.m; sourceTree = "<group>"; };
-		33016DE71B40002500DB50AA /* JSAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAccountManager.h; sourceTree = "<group>"; };
-		33016DE81B40002500DB50AA /* JSAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAccountManager.m; sourceTree = "<group>"; };
-		33016DE91B40002500DB50AA /* JSConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSConst.h; sourceTree = "<group>"; };
-		33016DEA1B40002500DB50AA /* JSConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSConst.m; sourceTree = "<group>"; };
+		33016DE51B40002500DB50AA /* TSAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAccountInfo.h; sourceTree = "<group>"; };
+		33016DE61B40002500DB50AA /* TSAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAccountInfo.m; sourceTree = "<group>"; };
+		33016DE71B40002500DB50AA /* TSAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAccountManager.h; sourceTree = "<group>"; };
+		33016DE81B40002500DB50AA /* TSAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAccountManager.m; sourceTree = "<group>"; };
+		33016DE91B40002500DB50AA /* TSConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSConst.h; sourceTree = "<group>"; };
+		33016DEA1B40002500DB50AA /* TSConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSConst.m; sourceTree = "<group>"; };
 		33016DEF1B4000B900DB50AA /* TSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSObject.h; sourceTree = "<group>"; };
 		33016DF01B4000B900DB50AA /* TSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSObject.m; sourceTree = "<group>"; };
 		331EA21E1B3008F5004BC048 /* #define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "#define.h"; sourceTree = "<group>"; };
@@ -160,6 +160,7 @@
 		378F23551B7731F200D368E8 /* TSWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSWebView.m; sourceTree = "<group>"; };
 		378F235A1B7732A600D368E8 /* TSKeyValueStoreConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSKeyValueStoreConst.h; sourceTree = "<group>"; };
 		378F235B1B7732A600D368E8 /* TSKeyValueStoreConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSKeyValueStoreConst.m; sourceTree = "<group>"; };
+		378F235D1B77357900D368E8 /* TSKeyValueStoreHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSKeyValueStoreHeaders.h; sourceTree = "<group>"; };
 		6801F9351AD7EC6A000117F2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6801F9371AD7EE4C000117F2 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncSocket.h; path = AsyncSocket/AsyncSocket.h; sourceTree = "<group>"; };
 		6801F9381AD7EE4C000117F2 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncSocket.m; path = AsyncSocket/AsyncSocket.m; sourceTree = "<group>"; };
@@ -296,12 +297,12 @@
 			isa = PBXGroup;
 			children = (
 				33016DE41B40002500DB50AA /* JSAccountHeaders.h */,
-				33016DE51B40002500DB50AA /* JSAccountInfo.h */,
-				33016DE61B40002500DB50AA /* JSAccountInfo.m */,
-				33016DE71B40002500DB50AA /* JSAccountManager.h */,
-				33016DE81B40002500DB50AA /* JSAccountManager.m */,
-				33016DE91B40002500DB50AA /* JSConst.h */,
-				33016DEA1B40002500DB50AA /* JSConst.m */,
+				33016DE51B40002500DB50AA /* TSAccountInfo.h */,
+				33016DE61B40002500DB50AA /* TSAccountInfo.m */,
+				33016DE71B40002500DB50AA /* TSAccountManager.h */,
+				33016DE81B40002500DB50AA /* TSAccountManager.m */,
+				33016DE91B40002500DB50AA /* TSConst.h */,
+				33016DEA1B40002500DB50AA /* TSConst.m */,
 			);
 			path = JSUserManager;
 			sourceTree = "<group>";
@@ -551,6 +552,7 @@
 		680AB4E21ACAA348007CBBE4 /* KeyValueStore */ = {
 			isa = PBXGroup;
 			children = (
+				378F235D1B77357900D368E8 /* TSKeyValueStoreHeaders.h */,
 				335DED6D1B29AF910008A308 /* TSKeyValueStore.h */,
 				335DED6E1B29AF920008A308 /* TSKeyValueStore.m */,
 				378F235A1B7732A600D368E8 /* TSKeyValueStoreConst.h */,
@@ -940,7 +942,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33016DEB1B40002500DB50AA /* JSAccountInfo.m in Sources */,
+				33016DEB1B40002500DB50AA /* TSAccountInfo.m in Sources */,
 				378F235C1B7732A600D368E8 /* TSKeyValueStoreConst.m in Sources */,
 				68F9D7041AD7CEF2004A2905 /* JavaScriptCoreViewController.m in Sources */,
 				33EA66061ADC0D52009DDEEF /* BackgroundRunner.m in Sources */,
@@ -948,7 +950,7 @@
 				378F23561B7731F200D368E8 /* TSCollectionView.m in Sources */,
 				33016DF11B4000B900DB50AA /* TSObject.m in Sources */,
 				680AB5181ACAA3FA007CBBE4 /* Singleton.m in Sources */,
-				33016DEC1B40002500DB50AA /* JSAccountManager.m in Sources */,
+				33016DEC1B40002500DB50AA /* TSAccountManager.m in Sources */,
 				335DED6F1B29AF920008A308 /* TSKeyValueStore.m in Sources */,
 				68F9D7131AD7D720004A2905 /* SimplePing.m in Sources */,
 				33409BEE1B317CBC0066510C /* NSString+StringKit.m in Sources */,
@@ -964,7 +966,7 @@
 				680AB5121ACAA348007CBBE4 /* MainViewController.m in Sources */,
 				68FDAE451B00845F00B133B7 /* BlurViewController.m in Sources */,
 				68F9D6BC1AD7A94B004A2905 /* BaseViewController.m in Sources */,
-				33016DED1B40002500DB50AA /* JSConst.m in Sources */,
+				33016DED1B40002500DB50AA /* TSConst.m in Sources */,
 				68F9D6FA1AD7CABE004A2905 /* AddressBookViewController.m in Sources */,
 				685F6ED41B0F02F9005F2782 /* NSDate+CalendarKit.m in Sources */,
 				335DED621B2999C00008A308 /* WebNativeDemoViewController.m in Sources */,

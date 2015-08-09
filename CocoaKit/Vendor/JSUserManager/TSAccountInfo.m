@@ -6,11 +6,11 @@
 //  Copyright (c) 2015年 iOSDev. All rights reserved.
 //
 
-#import "JSAccountInfo.h"
+#import "TSAccountInfo.h"
 
 
 
-@implementation JSAccountInfo
+@implementation TSAccountInfo
 
 - (void)dealloc
 {

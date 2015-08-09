@@ -8,8 +8,7 @@
 
 
 
-@class YTKKeyValueItem ;
-@class YTKKeyValueStore;
+#import "YTKKeyValueStore.h"
 
 @interface TSKeyValueStore : NSObject
 

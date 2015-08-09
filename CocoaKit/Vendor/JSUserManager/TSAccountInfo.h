@@ -8,7 +8,7 @@
 
 #import "TSObject.h"
 
-@interface JSAccountInfo : TSObject
+@interface TSAccountInfo : TSObject
 
 @property(nonatomic,assign)NSInteger        role; ///角色
 

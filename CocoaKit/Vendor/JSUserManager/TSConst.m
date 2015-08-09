@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 iOSDev. All rights reserved.
 //
 
-#import "JSConst.h"
+#import "TSConst.h"
 
-@implementation JSConst
+@implementation TSConst
 
 NSString *const JS_AccountDBName = @"Account";
 NSString *const JS_AccountManager = @"JSAccountManager";

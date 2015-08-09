@@ -8,16 +8,16 @@
 
 #import "TSObject.h"
 
-@class JSAccountInfo;
+@class TSAccountInfo;
 
-@interface JSAccountManager : TSObject
+@interface TSAccountManager : TSObject
 
-@property(nonatomic,strong)JSAccountInfo      *currentAccountInfo;
+@property(nonatomic,strong)TSAccountInfo      *currentAccountInfo;
 @property(nonatomic,strong)NSMutableArray     *accountMutableArray;
 
 
 
-- (JSAccountInfo*)currentAccountInfo;
+- (TSAccountInfo*)currentAccountInfo;
 
 
 

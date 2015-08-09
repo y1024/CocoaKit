@@ -6,17 +6,15 @@
 //  Copyright (c) 2015年 iOSDev. All rights reserved.
 //
 
-#import "JSAccountManager.h"
-#import "JSAccountInfo.h"
+#import "TSAccountManager.h"
+#import "TSAccountInfo.h"
 
 #import "MJExtension.h"
-#import "TSKeyValueStore.h"
 #import "CocoaKit.h"
-#import "YTKKeyValueStore.h"
+#import "TSKeyValueStoreHeaders.h"
 
 
-
-@implementation JSAccountManager
+@implementation TSAccountManager
 
 
 
@@ -27,9 +25,9 @@
 }
 
 
-- (JSAccountInfo*)currentAccountInfo
+- (TSAccountInfo*)currentAccountInfo
 {
-    JSAccountInfo *current = nil;
+    TSAccountInfo *current = nil;
     NSInteger arrayCount = _accountMutableArray.count;
     if (!nullArray(_accountMutableArray)) {
         current  = nil;
@@ -44,8 +42,8 @@
 
             for (j = 0 ; j < arrayCount; j++) {
                 for (i = 0; i < arrayCount -1 - j; i++) {
-                    JSAccountInfo *curretInfo = _accountMutableArray[i];
-                    JSAccountInfo *nextInfo = _accountMutableArray[i + 1];
+                    TSAccountInfo *curretInfo = _accountMutableArray[i];
+                    TSAccountInfo *nextInfo = _accountMutableArray[i + 1];
                     NSComparisonResult result = [[NSDate fromString:curretInfo.loginDateString] compare:[NSDate fromString:nextInfo.loginDateString]];
                     if (result == NSOrderedAscending) {
                         [_accountMutableArray exchangeObjectAtIndex:i withObjectAtIndex:i+1];
@@ -72,7 +70,7 @@
         [allAccountJSONString enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             YTKKeyValueItem *item = obj;
             
-            JSAccountInfo *info = [JSAccountInfo objectWithKeyValues:item.itemObject];
+            TSAccountInfo *info = [TSAccountInfo objectWithKeyValues:item.itemObject];
             [_accountMutableArray addObject:info];
         }];
         
