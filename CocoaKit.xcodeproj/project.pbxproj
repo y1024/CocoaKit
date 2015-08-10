@@ -23,6 +23,7 @@
 		33A1B3161B3C344700583C9E /* MYDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B3151B3C344700583C9E /* MYDrawView.m */; };
 		33EA66061ADC0D52009DDEEF /* BackgroundRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EA66051ADC0D52009DDEEF /* BackgroundRunner.m */; };
 		3750A6551B7473C20026F55F /* GPXFileBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3750A6541B7473C20026F55F /* GPXFileBundle.bundle */; };
+		378173A81B778A570040DA75 /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 378173A71B778A570040DA75 /* GZIP.m */; };
 		378F23561B7731F200D368E8 /* TSCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 378F234F1B7731F200D368E8 /* TSCollectionView.m */; };
 		378F23571B7731F200D368E8 /* TSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 378F23511B7731F200D368E8 /* TSTableView.m */; };
 		378F23581B7731F200D368E8 /* TSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 378F23531B7731F200D368E8 /* TSView.m */; };
@@ -148,6 +149,8 @@
 		33EA66041ADC0D52009DDEEF /* BackgroundRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundRunner.h; path = BackgroundRunner/BackgroundRunner.h; sourceTree = "<group>"; };
 		33EA66051ADC0D52009DDEEF /* BackgroundRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackgroundRunner.m; path = BackgroundRunner/BackgroundRunner.m; sourceTree = "<group>"; };
 		3750A6541B7473C20026F55F /* GPXFileBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GPXFileBundle.bundle; sourceTree = "<group>"; };
+		378173A61B778A570040DA75 /* GZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZIP.h; sourceTree = "<group>"; };
+		378173A71B778A570040DA75 /* GZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZIP.m; sourceTree = "<group>"; };
 		378F234E1B7731F200D368E8 /* TSCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCollectionView.h; sourceTree = "<group>"; };
 		378F234F1B7731F200D368E8 /* TSCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCollectionView.m; sourceTree = "<group>"; };
 		378F23501B7731F200D368E8 /* TSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTableView.h; sourceTree = "<group>"; };
@@ -403,6 +406,15 @@
 			path = BundleFiles;
 			sourceTree = "<group>";
 		};
+		378173A51B778A570040DA75 /* GZIP */ = {
+			isa = PBXGroup;
+			children = (
+				378173A61B778A570040DA75 /* GZIP.h */,
+				378173A71B778A570040DA75 /* GZIP.m */,
+			);
+			path = GZIP;
+			sourceTree = "<group>";
+		};
 		378F234D1B7731F200D368E8 /* TSView */ = {
 			isa = PBXGroup;
 			children = (
@@ -521,6 +533,7 @@
 		680AB4E11ACAA348007CBBE4 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				378173A51B778A570040DA75 /* GZIP */,
 				378F235E1B77375A00D368E8 /* TSObject */,
 				378F234D1B7731F200D368E8 /* TSView */,
 				3750A6531B7473C20026F55F /* BundleFiles */,
@@ -951,6 +964,7 @@
 				680AB51C1ACAA71A007CBBE4 /* CocoaKit.m in Sources */,
 				378F23561B7731F200D368E8 /* TSCollectionView.m in Sources */,
 				680AB5181ACAA3FA007CBBE4 /* Singleton.m in Sources */,
+				378173A81B778A570040DA75 /* GZIP.m in Sources */,
 				33016DEC1B40002500DB50AA /* TSAccountManager.m in Sources */,
 				335DED6F1B29AF920008A308 /* TSKeyValueStore.m in Sources */,
 				68F9D7131AD7D720004A2905 /* SimplePing.m in Sources */,
