@@ -26,7 +26,7 @@
 
 #import "MYHUD.h"
 #import "TSImport.h"
-
+#import "ReactiveCocoaViewController.h"
 
 
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -215,9 +215,12 @@
             break;
             case 5:
         {
-            WebNativeDemoViewController *webNativeVC = [[WebNativeDemoViewController alloc]init];
-            [self.navigationController pushViewController:webNativeVC animated:YES];
-            webNativeVC = nil;
+//            WebNativeDemoViewController *webNativeVC = [[WebNativeDemoViewController alloc]init];
+//            [self.navigationController pushViewController:webNativeVC animated:YES];
+//            webNativeVC = nil;
+            
+            ReactiveCocoaViewController *racVC = [[ReactiveCocoaViewController alloc]init];
+            [self.navigationController pushViewController:racVC animated:YES];
         }
             
         default:

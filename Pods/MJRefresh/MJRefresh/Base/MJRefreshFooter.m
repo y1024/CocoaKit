@@ -35,6 +35,39 @@
     
     // 设置自己的高度
     self.mj_h = MJRefreshFooterHeight;
+    
+    // 默认是自动隐藏
+    self.automaticallyHidden = YES;
+}
+
+
+- (void)scrollViewContentSizeDidChange:(NSDictionary *)change
+{
+    [super scrollViewContentSizeDidChange:change];
+    
+    // change == nil是第一次调用的时候
+    if (!self.isAutomaticallyHidden || change == nil) return;
+    
+    if ([self.scrollView isKindOfClass:[UITableView class]]) {
+        UITableView *tableView = (UITableView *)self.scrollView;
+        NSInteger count = 0;
+        for (NSInteger i = 0; i < tableView.numberOfSections; i++) {
+            count += [tableView numberOfRowsInSection:i];
+        }
+        self.hidden = (count == 0);
+    } else if ([self.scrollView isKindOfClass:[UICollectionView class]]) {
+        UICollectionView *collectionView = (UICollectionView *)self.scrollView;
+        NSInteger count = 0;
+        for (NSInteger i = 0; i < collectionView.numberOfSections; i++) {
+            count += [collectionView numberOfItemsInSection:i];
+        }
+        self.hidden = (count == 0);
+    }
+}
+
+- (void)setAutomaticallyHidden:(BOOL)automaticallyHidden
+{
+    _automaticallyHidden = automaticallyHidden;
 }
 
 #pragma mark - 公共方法

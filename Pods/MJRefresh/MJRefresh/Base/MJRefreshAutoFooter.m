@@ -9,7 +9,6 @@
 #import "MJRefreshAutoFooter.h"
 
 @interface MJRefreshAutoFooter()
-@property (strong, nonatomic) UIPanGestureRecognizer *pan;
 @end
 
 @implementation MJRefreshAutoFooter
@@ -93,7 +92,6 @@
     MJRefreshCheckState
     
     if (state == MJRefreshStateRefreshing) {
-        // 这里延迟是防止惯性导致连续上拉
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self executeRefreshingCallback];
         });
