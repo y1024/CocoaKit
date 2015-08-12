@@ -37,7 +37,6 @@
     [self hanleBackgroundWithFlag:YES];
     
     [self setupViewControllers];
-
     
 //    RegionModel *model = queryWithPhoneNmuber(@"03733693206");
 //    
