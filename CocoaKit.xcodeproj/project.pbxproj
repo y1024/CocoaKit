@@ -31,6 +31,7 @@
 		378F235C1B7732A600D368E8 /* TSKeyValueStoreConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 378F235B1B7732A600D368E8 /* TSKeyValueStoreConst.m */; };
 		378F23611B77375A00D368E8 /* TSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 378F23601B77375A00D368E8 /* TSObject.m */; };
 		37D5C72E1B79001500AFCD20 /* ReactiveCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D5C72D1B79001500AFCD20 /* ReactiveCocoaViewController.m */; };
+		37F46BBC1B85BA3D00782673 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F46BBB1B85BA3D00782673 /* NSString+UUID.m */; };
 		499E5A0B8C6AA89347DCC1B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A4A9B5D10838839733E71 /* libPods.a */; };
 		6801F9361AD7EC6A000117F2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6801F9351AD7EC6A000117F2 /* SystemConfiguration.framework */; };
 		6801F93B1AD7EE4C000117F2 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6801F9381AD7EE4C000117F2 /* AsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -168,6 +169,8 @@
 		378F23621B77382200D368E8 /* TSViewHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSViewHeaders.h; sourceTree = "<group>"; };
 		37D5C72C1B79001500AFCD20 /* ReactiveCocoaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveCocoaViewController.h; sourceTree = "<group>"; };
 		37D5C72D1B79001500AFCD20 /* ReactiveCocoaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactiveCocoaViewController.m; sourceTree = "<group>"; };
+		37F46BBA1B85BA3D00782673 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
+		37F46BBB1B85BA3D00782673 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
 		6801F9351AD7EC6A000117F2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6801F9371AD7EE4C000117F2 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncSocket.h; path = AsyncSocket/AsyncSocket.h; sourceTree = "<group>"; };
 		6801F9381AD7EE4C000117F2 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncSocket.m; path = AsyncSocket/AsyncSocket.m; sourceTree = "<group>"; };
@@ -342,6 +345,8 @@
 				33016DDF1B3FFF6700DB50AA /* UIImageView+ImageViewKit.h */,
 				33409BEC1B317CBC0066510C /* NSString+StringKit.h */,
 				33409BED1B317CBC0066510C /* NSString+StringKit.m */,
+				37F46BBA1B85BA3D00782673 /* NSString+UUID.h */,
+				37F46BBB1B85BA3D00782673 /* NSString+UUID.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -974,6 +979,7 @@
 				33016DEB1B40002500DB50AA /* TSAccountInfo.m in Sources */,
 				378F235C1B7732A600D368E8 /* TSKeyValueStoreConst.m in Sources */,
 				68F9D7041AD7CEF2004A2905 /* JavaScriptCoreViewController.m in Sources */,
+				37F46BBC1B85BA3D00782673 /* NSString+UUID.m in Sources */,
 				33EA66061ADC0D52009DDEEF /* BackgroundRunner.m in Sources */,
 				680AB51C1ACAA71A007CBBE4 /* CocoaKit.m in Sources */,
 				378F23561B7731F200D368E8 /* TSCollectionView.m in Sources */,
