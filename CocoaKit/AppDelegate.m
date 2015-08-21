@@ -25,10 +25,17 @@
 #import "NSMutableArray+Swizzling.h"
 
 #import <objc/runtime.h>
+#import "NSObject+Swizzling.h"
 
+void method(id obj)
+{
+    
+}
 
 
 @implementation AppDelegate
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -54,8 +61,22 @@
 //    
 //    NSLog(@"%@",[@"2015-06-17 18:07:00" clockStringWithDate:[NSDate date]]);
     
-//    NSMutableArray *ay  = [NSMutableArray array];
+//    NSObject *obj = [[NSObject alloc]init];
 //    
+//    Method normal = class_getClassMethod([obj class], @selector(init));
+//    Method myInit = class_getClassMethod([obj class], @selector(ts_init));
+//    method_exchangeImplementations(normal, myInit);
+    
+//    NSObject *obj2 = [[NSObject alloc]init];
+    
+    
+    NSMutableArray *ay  = [[NSMutableArray alloc]init];
+    
+//    NSLog(@"imp:%@",imp);
+    
+    [ay addObject:@"2"];
+    NSLog(@"ary:%@",ay);
+    
 //    Method ori_Method =  class_getInstanceMethod([ay class], @selector(addObject:));
 //    Method my_Method = class_getInstanceMethod([ay class], @selector(js_addObject:));
 //    method_exchangeImplementations(ori_Method, my_Method);
@@ -63,11 +84,13 @@
 //    [ay addObject:@"a"];
 //    [ay addObject:@"b"];
 //    [ay addObject:@"a"];
-    
+//    
     
     
     
 //    NSLog(@"%@",ay);
+    
+    
     
 
     

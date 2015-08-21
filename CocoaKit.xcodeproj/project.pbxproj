@@ -104,6 +104,7 @@
 		68FDAE691B00A31D00B133B7 /* sr_refresh@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FDAE621B00A31D00B133B7 /* sr_refresh@2X.png */; };
 		68FDAE6A1B00A31D00B133B7 /* SRRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDAE651B00A31D00B133B7 /* SRRefreshView.m */; };
 		68FDAE6B1B00A31D00B133B7 /* SRSlimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDAE671B00A31D00B133B7 /* SRSlimeView.m */; };
+		CDCF834E1B8656840011F7D7 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCF834D1B8656840011F7D7 /* NSObject+Swizzling.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,7 +121,6 @@
 		33016DD91B3FFF6700DB50AA /* NSDate+DateKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateKit.m"; sourceTree = "<group>"; };
 		33016DDA1B3FFF6700DB50AA /* UIColor+ColorKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorKit.h"; sourceTree = "<group>"; };
 		33016DDB1B3FFF6700DB50AA /* UIColor+ColorKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorKit.m"; sourceTree = "<group>"; };
-		33016DDC1B3FFF6700DB50AA /* JSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCategory.h; sourceTree = "<group>"; };
 		33016DDD1B3FFF6700DB50AA /* NSDate+DateKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateKit.h"; sourceTree = "<group>"; };
 		33016DDE1B3FFF6700DB50AA /* UIImageView+ImageViewKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ImageViewKit.m"; sourceTree = "<group>"; };
 		33016DDF1B3FFF6700DB50AA /* UIImageView+ImageViewKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ImageViewKit.h"; sourceTree = "<group>"; };
@@ -270,6 +270,9 @@
 		68FDAE671B00A31D00B133B7 /* SRSlimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSlimeView.m; sourceTree = "<group>"; };
 		A51307E3C28F71CCC9085F83 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BA6A4A9B5D10838839733E71 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCF834B1B864FD70011F7D7 /* TSCategoryHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCategoryHeaders.h; sourceTree = "<group>"; };
+		CDCF834C1B8656840011F7D7 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		CDCF834D1B8656840011F7D7 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
 		DC4699B30E7A3EE798617569 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -336,10 +339,10 @@
 		33409BEB1B317C990066510C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				CDCF834B1B864FD70011F7D7 /* TSCategoryHeaders.h */,
 				33016DD91B3FFF6700DB50AA /* NSDate+DateKit.m */,
 				33016DDA1B3FFF6700DB50AA /* UIColor+ColorKit.h */,
 				33016DDB1B3FFF6700DB50AA /* UIColor+ColorKit.m */,
-				33016DDC1B3FFF6700DB50AA /* JSCategory.h */,
 				33016DDD1B3FFF6700DB50AA /* NSDate+DateKit.h */,
 				33016DDE1B3FFF6700DB50AA /* UIImageView+ImageViewKit.m */,
 				33016DDF1B3FFF6700DB50AA /* UIImageView+ImageViewKit.h */,
@@ -382,6 +385,8 @@
 		336417181B3D71D700F055EF /* Swizzling */ = {
 			isa = PBXGroup;
 			children = (
+				CDCF834C1B8656840011F7D7 /* NSObject+Swizzling.h */,
+				CDCF834D1B8656840011F7D7 /* NSObject+Swizzling.m */,
 				336417191B3D71FB00F055EF /* NSMutableArray+Swizzling.h */,
 				3364171A1B3D71FB00F055EF /* NSMutableArray+Swizzling.m */,
 			);
@@ -1019,6 +1024,7 @@
 				68F9D6BF1AD7A959004A2905 /* QRViewController.m in Sources */,
 				68F9D70A1AD7CF38004A2905 /* Person.m in Sources */,
 				335DED5A1B2998840008A308 /* MYApplication.m in Sources */,
+				CDCF834E1B8656840011F7D7 /* NSObject+Swizzling.m in Sources */,
 				33A1B3161B3C344700583C9E /* MYDrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
