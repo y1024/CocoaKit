@@ -13,7 +13,6 @@
 
 - (void)js_addObject:(id)anObject
 {
-    
     if (self.count > 0) {
         for (NSString *str in self) {
             if ([str isEqualToString:anObject]) {
