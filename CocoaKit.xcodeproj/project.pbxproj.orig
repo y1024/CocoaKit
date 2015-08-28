@@ -121,10 +121,14 @@
 		33016DD91B3FFF6700DB50AA /* NSDate+DateKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateKit.m"; sourceTree = "<group>"; };
 		33016DDA1B3FFF6700DB50AA /* UIColor+ColorKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorKit.h"; sourceTree = "<group>"; };
 		33016DDB1B3FFF6700DB50AA /* UIColor+ColorKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorKit.m"; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		33016DDC1B3FFF6700DB50AA /* TSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCategory.h; sourceTree = "<group>"; };
+=======
+>>>>>>> 1690583bb697479fa48b19dc0ae90b70bebce9ff
 		33016DDD1B3FFF6700DB50AA /* NSDate+DateKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateKit.h"; sourceTree = "<group>"; };
 		33016DDE1B3FFF6700DB50AA /* UIImageView+ImageViewKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ImageViewKit.m"; sourceTree = "<group>"; };
 		33016DDF1B3FFF6700DB50AA /* UIImageView+ImageViewKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ImageViewKit.h"; sourceTree = "<group>"; };
-		33016DE41B40002500DB50AA /* JSAccountHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAccountHeaders.h; sourceTree = "<group>"; };
+		33016DE41B40002500DB50AA /* TSAccountHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAccountHeaders.h; sourceTree = "<group>"; };
 		33016DE51B40002500DB50AA /* TSAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAccountInfo.h; sourceTree = "<group>"; };
 		33016DE61B40002500DB50AA /* TSAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAccountInfo.m; sourceTree = "<group>"; };
 		33016DE71B40002500DB50AA /* TSAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAccountManager.h; sourceTree = "<group>"; };
@@ -309,7 +313,7 @@
 		33016DE31B40002500DB50AA /* JSUserManager */ = {
 			isa = PBXGroup;
 			children = (
-				33016DE41B40002500DB50AA /* JSAccountHeaders.h */,
+				33016DE41B40002500DB50AA /* TSAccountHeaders.h */,
 				33016DE51B40002500DB50AA /* TSAccountInfo.h */,
 				33016DE61B40002500DB50AA /* TSAccountInfo.m */,
 				33016DE71B40002500DB50AA /* TSAccountManager.h */,
@@ -343,6 +347,10 @@
 				33016DD91B3FFF6700DB50AA /* NSDate+DateKit.m */,
 				33016DDA1B3FFF6700DB50AA /* UIColor+ColorKit.h */,
 				33016DDB1B3FFF6700DB50AA /* UIColor+ColorKit.m */,
+<<<<<<< HEAD
+				33016DDC1B3FFF6700DB50AA /* TSCategory.h */,
+=======
+>>>>>>> 1690583bb697479fa48b19dc0ae90b70bebce9ff
 				33016DDD1B3FFF6700DB50AA /* NSDate+DateKit.h */,
 				33016DDE1B3FFF6700DB50AA /* UIImageView+ImageViewKit.m */,
 				33016DDF1B3FFF6700DB50AA /* UIImageView+ImageViewKit.h */,

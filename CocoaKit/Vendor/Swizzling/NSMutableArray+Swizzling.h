@@ -12,5 +12,6 @@
 
 - (void)js_addObject:(id)anObject;
 
+- (void)logAddObject:(id)anObj;
 
 @end

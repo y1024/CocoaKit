@@ -7,7 +7,7 @@
 //
 
 #import "NSMutableArray+Swizzling.h"
-
+#import <objc/runtime.h>
 
 @implementation NSMutableArray (Swizzling)
 
@@ -25,6 +25,22 @@
     
 }
 
++ (void)load {
+    
+    Class selfClass = object_getClass(self);
+    
+    Method addObj = class_getInstanceMethod(selfClass, @selector(addObject:));
+    Method logAddobject = class_getInstanceMethod(selfClass, @selector(logAddObject:));
+    method_exchangeImplementations(addObj, logAddobject);
+    
+//    Class selfClass = object_getClass(self);
+    
+    NSLog(@"name:%@",NSStringFromClass(selfClass));
+}
 
+- (void)logAddObject:(id)anObj {
+    [self logAddObject:anObj];
+    NSLog(@"Added object %@ to array %@", anObj, self);
+}
 
 @end
