@@ -74,8 +74,8 @@ void method(id obj)
     
 //    NSLog(@"imp:%@",imp);
     
-    [ay addObject:@"2"];
-    NSLog(@"ary:%@",ay);
+//    [ay addObject:@"2"];
+//    NSLog(@"ary:%@",ay);
     
 //    Method ori_Method =  class_getInstanceMethod([ay class], @selector(addObject:));
 //    Method my_Method = class_getInstanceMethod([ay class], @selector(js_addObject:));
